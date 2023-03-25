@@ -1,0 +1,32 @@
+{% load static %}
+<nav class="navbar">
+    <div class="container-fluid">
+        <a href="/" class="navbar-brand navbar-light-style d-flex align-items-center">
+            {#            <img src="{% static '/image/FMW logo.svg' %}" alt="FMW" width="12%">#}
+            <span>Findmywork</span>
+        </a>
+        <form class="d-flex" role="search">
+            <div class="dropdown d-flex align-items-center" style="margin-left: 2rem">
+                <a href="#" role="button" data-bs-toggle="dropdown">
+                    <img src="{% static 'image/icons/bell.svg' %}" alt="bell">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                    <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown d-flex align-items-center" style="margin-left: 2rem">
+                <a href="#" role="button" data-bs-toggle="dropdown">
+                    <img src="{% static 'image/icons/message.svg' %}" alt="message">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Message 1</a></li>
+                    <li><a class="dropdown-item" href="#">Message 2</a></li>
+                    <li><a class="dropdown-item" href="#">Message 3</a></li>
+                </ul>
+            </div>
+            <a style="margin-left: 2rem" class="d-flex align-items-center nav-profile-img" href="#"><img src="{% static 'image/icons/imgplaceholder.svg' %}" alt="img"></a>
+        </form>
+    </div>
+</nav>

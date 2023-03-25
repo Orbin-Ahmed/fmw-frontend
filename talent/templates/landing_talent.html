@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/talent_landing.css' %}">
+</head>
+<body>
+{% include 'navbar_talent.html' %}
+<div class="container-fluid mt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-2">
+            {% include 'talent_landing/talent_landing_left.html' %}
+        </div>
+        <div class="col-7">
+            {% include 'talent_landing/talent_landing_right.html' %}
+        </div>
+    </div>
+</div>
+<script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+<script>
+    function change_filter(id) {
+        let current_filter = document.querySelector('.current-filter');
+        current_filter.classList.remove('current-filter')
+        document.getElementById(id).classList.add('current-filter');
+    }
+</script>
+</body>
+</html>

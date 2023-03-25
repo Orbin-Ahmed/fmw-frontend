@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Talent Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static 'css/talent_profile/talent_profile.css' %}">
+    {#    <link rel="stylesheet" href="{% static '/css/root.css' %}">#}
+    <link rel="stylesheet" href="{% static '/css/talent_profile/profile-resume.css' %}">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b53e5b7c10.css" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="{% static '/image/FMW logo.svg' %}">
+    <style>
+        html {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<section id="Profile-section">
+    <div class="container-fluid"> <!--Main Container-->
+        <div class="row g-5"> <!--Main Row-->
+
+
+            <!--Sidebar Column-->
+
+            <div class="col-3 sidebar text-center">
+
+
+                {% include 'Profile/sidebar.html' %}
+            </div><!--sidebar main column ends-->
+
+
+            <!--Profile Content Column-->
+
+            <div class="col-9 profile-section">
+
+                <!--Profile Top Content section-->
+                <div class="row profile-top g-0">
+
+                    <div class="col d-flex gap-3 align-items-center">
+                        <img alt="" width="10" src="{% static '/image/icons/location_icon.svg' %}">
+                        <p>Dhaka, Bangladesh - 1:44 pm local time</p>
+                    </div>
+                    <div class="row profile-name-status pt-5 p-0">
+                        <div class="col">
+                            <h2>Good Morning</h2>
+                            <h1>MD. Shafiqul Islam</h1>
+                        </div>
+
+                        <div class="col d-grid status-parent text-end align-content-between p-0">
+                            <div class="status d-flex gap-3 pb-3 justify-content-end align-items-end"
+                                 style="cursor: pointer" id="profile_status_toggle_div">
+                                <img alt=""
+                                     src="{% static '/image/icons/profile_status_icon.svg' %}">
+                                <p style="cursor: pointer" id="profile_status_toggle">Private</p>
+                            </div>
+                            <h1>PLUS</h1>
+                        </div>
+
+                    </div>
+
+
+                    <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="feed-tab" data-bs-toggle="tab"
+                                    data-bs-target="#feed" type="button"
+                                    role="tab" aria-controls="feed" aria-selected="true">Profile
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="best-tab" data-bs-toggle="tab" data-bs-target="#best"
+                                    type="button"
+                                    role="tab" aria-controls="best" aria-selected="false">Best Matches
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recent"
+                                    type="button"
+                                    role="tab" aria-controls="recent" aria-selected="false">Most Recent
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="saved-tab" data-bs-toggle="tab" data-bs-target="#saved"
+                                    type="button"
+                                    role="tab" aria-controls="saved" aria-selected="false">Saved Jobs
+                            </button>
+                        </li>
+                    </ul>
+
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="feed" role="tabpanel"
+                             aria-labelledby="home-tab">{% include 'Profile/profile_tab.html' %}</div>
+                        <div class="tab-pane fade" id="best" role="tabpanel"
+                             aria-labelledby="profile-tab">{% include 'Profile/resume_tab.html' %}</div>
+                        <div class="tab-pane fade" id="recent" role="tabpanel"
+                             aria-labelledby="contact-tab">{% include 'Profile/finance_tab.html' %}</div>
+                        <div class="tab-pane fade" id="saved" role="tabpanel"
+                             aria-labelledby="contact-tab">{% include 'Profile/profile_tab.html' %}</div>
+                    </div>
+
+
+                </div>
+
+
+            </div>      <!--Profile top section div ends-->
+
+
+            {% include 'Profile/Finance_subpages/activities.html' %}
+
+            <!--Finance div ends-->
+
+
+        </div><!--profile section div ends-->
+
+
+    </div>  <!--main row ends Section-->
+
+
+    </div><!--main container ends-->
+
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static '/js/profile.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/b53e5b7c10.js" crossorigin="anonymous"></script>
+</body>
+</html>

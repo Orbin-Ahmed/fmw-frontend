@@ -1,0 +1,42 @@
+{% load static %}
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand navbar-light-style d-flex align-items-center">
+            {#            <img src="{% static '/image/FMW logo.svg' %}" alt="FMW" width="12%">#}
+            <span>Findmywork</span>
+        </a>
+        <form class="d-flex" role="search">
+            <div class="input-group">
+                <button class="btn search-btn" type="button" id="nav_search_btn" style="border-right: 0"><i
+                        class="bi bi-search"></i></button>
+                <input style="width: 35rem;" type="text" class="form-control search-form" placeholder="Search">
+                <select class="form-select search-dropdown" style="width: 18rem">
+                    <option selected>Jobs</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                </select>
+            </div>
+            <div class="dropdown d-flex align-items-center" style="margin-left: 2rem">
+                <a href="#" role="button" data-bs-toggle="dropdown">
+                    <img src="{% static 'image/icons/bell.svg' %}" alt="bell">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                    <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown d-flex align-items-center" style="margin-left: 2rem">
+                <a href="#" role="button" data-bs-toggle="dropdown">
+                    <img src="{% static 'image/icons/message.svg' %}" alt="message">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Message 1</a></li>
+                    <li><a class="dropdown-item" href="#">Message 2</a></li>
+                    <li><a class="dropdown-item" href="#">Message 3</a></li>
+                </ul>
+            </div>
+            <a style="margin-left: 2rem" class="d-flex align-items-center nav-profile-img" href="#"><img src="{% static 'image/icons/imgplaceholder.svg' %}" alt="img"></a>
+        </form>
+    </div>
+</nav>

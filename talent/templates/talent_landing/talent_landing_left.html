@@ -1,0 +1,132 @@
+{% load static %}
+<div class="top-card">
+    <img src="{% static 'image/icons/approval_delegation.svg' %}" alt="img">
+    <span class="proposal">Proposal</span>
+</div>
+<div class="top-2nd-card">
+    <p class="proposal-sub">My proposal</p>
+    <p class="proposal-sub"><span>1</span> active candidate</p>
+    <p class="proposal-sub"><span>33</span> submitted proposal</p>
+</div>
+{#Categories#}
+<div style="margin-bottom: 10rem">
+    <p class="filter-title">Filter</p>
+    <p class="filter-categories">Categories</p>
+    <div class="filter-card" style="overflow-y:scroll; height:400px;">
+        <p class="filter-title-name">Accounting & Consulting</p>
+        <p class="filter-subtitle">All - Accounting & Consulting</p>
+        <p class="filter-subtitle">Accounting & Bookkeeping</p>
+        <p class="filter-subtitle">Financial Planning</p>
+        <p class="filter-subtitle">Personal & Professional Coaching</p>
+
+        <p class="filter-title-name">IT & Networking</p>
+        <p class="filter-subtitle">Database Management & Administration</p>
+        <p class="filter-subtitle">DevOps & Solution Architecture</p>
+        <p class="filter-subtitle">ERP/CRM Software</p>
+        <p class="filter-subtitle">Information Security & Compliance</p>
+
+        <p class="filter-title-name">Legal</p>
+        <p class="filter-subtitle">Corporate & Contract Law</p>
+        <p class="filter-subtitle">International & Immigration Law</p>
+        <p class="filter-subtitle">Public Law</p>
+
+        <p class="filter-title-name">Admin Support</p>
+        <p class="filter-subtitle">Data Entry & Transcription Services</p>
+        <p class="filter-subtitle">Accounting & Bookkeeping</p>
+        <p class="filter-subtitle">Market Research & Product Reviews</p>
+        <p class="filter-subtitle">Project Management</p>
+
+        <p class="filter-title-name">Sales & Marketing</p>
+        <p class="filter-subtitle">Digital Marketing</p>
+        <p class="filter-subtitle">Lead Generation & Telemarketer</p>
+
+        <p class="filter-title-name">Customer Service</p>
+        <p class="filter-subtitle">Community Management & Tagging</p>
+        <p class="filter-subtitle">Accounting & Bookkeeping</p>
+
+        <p class="filter-title-name">Translation</p>
+        <p class="filter-subtitle">Language Tutoring & Interpretation</p>
+        <p class="filter-subtitle">Translation & Localization Service</p>
+
+        <p class="filter-title-name">Data Science & Analytics</p>
+        <p class="filter-subtitle">AI & Machine Learning</p>
+        <p class="filter-subtitle">Data Analysis & Testing</p>
+        <p class="filter-subtitle">Data Design & Visualization</p>
+        <p class="filter-subtitle">Data Extraction/ETL</p>
+
+        <p class="filter-title-name">Web, Mobile & Software Dev</p>
+        <p class="filter-subtitle">Blockchain, NFT & Cryptocurrency</p>
+        <p class="filter-subtitle">Desktop Application Development</p>
+        <p class="filter-subtitle">Ecommerce Development</p>
+        <p class="filter-subtitle">Game Design & Development</p>
+
+        <p class="filter-title-name">Design & Creative</p>
+        <p class="filter-subtitle">Art & Illustration</p>
+        <p class="filter-subtitle">Audio & Music Production</p>
+        <p class="filter-subtitle">Branding & Logo Design</p>
+        <p class="filter-subtitle">Graphic, Editorial & Presentation Design</p>
+
+        <p class="filter-title-name">Writing</p>
+        <p class="filter-subtitle">Content Writing</p>
+        <p class="filter-subtitle">Editing & Proofreading Service</p>
+        <p class="filter-subtitle">Professional & Business Writing</p>
+        <p class="filter-subtitle">Sales & Marketing Copyrighting</p>
+
+        <p class="filter-title-name">Engineering & Architecture</p>
+        <p class="filter-subtitle">3D Modeling & CAD</p>
+        <p class="filter-subtitle">Building & Landscape Architecture</p>
+        <p class="filter-subtitle">Chemical Engineering</p>
+        <p class="filter-subtitle">Civil & Structural Engineering</p>
+    </div>
+    {#    Job type#}
+    <div>
+        <p class="filter-categories pt-4">Job type</p>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="hourly-check-filter">
+            <label class="form-check-label" for="hourly-check-filter">
+                Hourly rate
+            </label>
+        </div>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="fixed-check-filter">
+            <label class="form-check-label" for="fixed-check-filter">
+                Fixed rate
+            </label>
+        </div>
+    </div>
+    {#    Location#}
+    <div>
+        <p class="filter-categories pt-4">Location</p>
+        <input class="form-control location-form" type="text" value="" id="location-filter"
+               placeholder="Search location">
+    </div>
+
+    {#Project Timeframe#}
+    <div>
+        <p class="filter-categories pt-4">Project Timeframe</p>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="one-month-filter">
+            <label class="form-check-label" for="one-month-filter">
+                Less than 1 month
+            </label>
+        </div>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="three-month-filter">
+            <label class="form-check-label" for="three-month-filter">
+                1 to 3 months
+            </label>
+        </div>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="six-month-filter">
+            <label class="form-check-label" for="six-month-filter">
+                3 to 6 months
+            </label>
+        </div>
+        <div class="form-check pt-3">
+            <input class="form-check-input" type="checkbox" value="" id="more-six-month-filter">
+            <label class="form-check-label" for="more-six-month-filter">
+                More than 6 months
+            </label>
+        </div>
+    </div>
+</div>

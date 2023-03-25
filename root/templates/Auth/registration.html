@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/registration.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+</head>
+<body>
+
+{% include 'navbar.html' %}
+<div class="container-fluid pt-5">
+    <div class="row d-flex justify-content-center card-registration">
+        <p class=" registration_bold_text text-center">Register as</p>
+        <div class="card-row pt-5">
+            <div class="card registration" onclick="selectCard(this)">
+                <p class="reg_img pt-5"><img src="{% static '/image/icons/reg1.svg' %}"></p>
+                <p class="registration_title pt-4">Talent</p>
+                <p class="registration_subtext pt-4">You can build your career,
+                <p class="registration_subtext"> Showcase your project and grab </p>
+                <p class="registration_subtext"> the attention of the recruiters.</p>
+            </div>
+            <div class="card registration" onclick="selectCard(this)">
+                <p class="reg_img pt-5"><img src="{% static '/image/icons/reg2.svg' %}"></p>
+                <p class="registration_title pt-4">Recruiter</p>
+                <p class="registration_subtext pt-4">Find the next talented youngster</p>
+                <p class="registration_subtext">for your company and many more...</p>
+
+            </div>
+            <div class="card registration" onclick="selectCard(this)">
+                <p class="reg_img pt-5"><img src="{% static '/image/icons/reg3.svg' %}"></p>
+                <p class="registration_title pt-4">Investor</p>
+                <p class="registration_subtext pt-4">Find the next talented youngster</p>
+                <p class="registration_subtext">for your company and many more...</p>
+            </div>
+            <div class="button-container">
+               <a style="all: unset;" href="/sign-up/"><button class="next-button">Next</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'landing_content/landing_footer.html' %}
+<script src="{% static 'js/registration.js' %}"></script>
+
+</body>
+</html>

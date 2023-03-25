@@ -1,0 +1,532 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    background: var(--background-ash);
+}
+
+.sidebar {
+    padding: 2rem 0;
+}
+
+.sidebar h1 {
+    color: var(--title);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+hr {
+    color: rgba(202, 196, 208, 0.5);
+    margin: 1.6rem;
+}
+
+#Profile-section {
+    padding: 0 15rem;
+}
+
+/*.profile-image-circle{*/
+/*    width: 16rem;*/
+/*    height: 16rem;*/
+/*    border-radius: 50%;*/
+/*    border:1px solid red;*/
+/*    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),*/
+/*                 -6px -6px 10px -1px rgba(255,255,255,0.7);*/
+/*}*/
+
+/*circle{*/
+/*    fill: none;*/
+/*    stroke: rgba(68, 160, 141, 1);*/
+/*    stroke-width: 1rem;*/
+/*    stroke-dasharray:47rem ;*/
+/*    stroke-dashoffset: 20rem;*/
+/*    !*stroke-dashoffset: 10rem;*!*/
+/*    !*stroke-dasharray: 27rem;*!*/
+/*    !*stroke-dashoffset: 47rem;*!*/
+/*    !*animation: anim 2s linear forwards;*!*/
+/*}*/
+
+/*Side bar css*/
+
+/*Side bar top section > top section*/
+
+.top-section {
+    text-align: center;
+    background: var(--white);
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.profile-name-status h1 {
+    font-size: 2.4rem;
+    color: var(--fmw_primary);
+}
+
+.top-section p {
+    font-size: 1.4rem;
+    color: var(--fmw_primary);
+    font-weight: 600;
+}
+
+.status-button {
+    margin: 2rem 0;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--positive);
+}
+
+.Badges {
+    width: 60%;
+    margin: auto;
+    border: 2px solid var(--fmw_primary);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.ratings {
+    margin-top: 2rem;
+}
+
+.ratings p {
+    padding-left: 1rem;
+    color: var(--fmw_primary);
+}
+
+.overview-section {
+    background: var(--white);
+    margin-bottom: 2rem;
+}
+
+.earning-section {
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+    padding: 2rem;
+}
+
+.earning-section p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 0.8rem;
+}
+
+.earning-section h6 {
+    font-size: 1.2rem;
+    color: var(--paragraph);
+    font-weight: 400;
+}
+
+.veri-lang-section {
+    padding: 2.4rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.veri-lang-section h1 {
+    color: var(--fmw_primary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.veri-lang-section p {
+    color: var(--paragraph);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.about-me-section {
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.about-me-section h1 {
+    color: var(--fmw_primary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about-me-section p {
+    color: var(--paragraph);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.contact-section {
+    background: var(--white);
+    margin-bottom: 2rem;
+}
+
+.education_title, .contact_title, .skills_title {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.contact-content {
+    padding: 2rem;
+}
+
+.contact-section p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: start;
+    padding-bottom: 1.2rem;
+}
+
+.contact-section span {
+    color: var(--title);
+    font-weight: 400;
+}
+
+.education-section {
+    background: var(--white);
+    margin-bottom: 2rem;
+}
+
+.education-section h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.education-section span {
+    font-size: 1.2rem;
+    padding-bottom: .8rem;
+    font-weight: 600;
+    color: #707070;
+}
+
+.education-section p {
+    padding-bottom: .8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--paragraph);
+}
+
+/*.education_title {*/
+/*    padding: 2rem;*/
+/*    border-bottom: 1px solid rgba(190, 190, 190, 1);*/
+/*}*/
+
+.edu-1, .edu-2 {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.edu-3 {
+    padding: 2rem;
+}
+
+
+.skills-section {
+    background: var(--white);
+}
+
+.skills-content {
+    padding: 2rem;
+    text-align: start;
+
+}
+
+.skills-content p {
+    display: inline-block;
+    background: #E4EBE4;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--title);
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+
+/*Profile page css starts*/
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--title);
+}
+
+
+h2 {
+    color: var(--title);
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--title);
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--paragraph);
+}
+
+p {
+    font-size: 1.4rem;
+    color: var(--paragraph);
+    font-weight: 400;
+}
+
+.gapp-1 {
+    gap: .8rem;
+}
+
+.gapp-2 {
+    gap: 1.6rem;
+}
+
+.profile-top p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.status p {
+    font-weight: 400;
+}
+
+.status-parent h1 {
+    background: linear-gradient(180deg, #44A08D 0%, #093637 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+}
+
+.profile-about-me h2 {
+    color: var(--fmw_primary);
+}
+
+
+.profile-section {
+    margin-top: 5rem;
+}
+
+.profile-top {
+    background: var(--white);
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.profile-intro {
+    background: var(--white);
+    padding: 0 2rem 2rem 2rem;
+}
+
+.progress {
+    margin-bottom: 1.5rem;
+    height: 0.5rem;
+    background: #E7E0EC;
+}
+
+.work_section_title {
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+    padding: 2rem;
+}
+
+.works_section {
+    background: var(--white);
+}
+
+.work_body {
+    padding: 2rem;
+}
+
+.employment-section {
+    background: var(--white);
+}
+
+.employment-title {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.employment-one {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+
+.employment-two {
+    padding: 2rem;
+}
+
+.accordion {
+    --bs-accordion-border-width: none;
+    --bs-accordion-active-bg: none;
+}
+
+.accordion-body {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.accordion-body ul {
+
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.accordion-body li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    padding-left: 8rem;
+
+}
+
+.accordion-body li:nth-child(3) {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-body li:nth-child(4) {
+    margin-bottom: 2rem;
+}
+
+.accordion-body li:nth-child(3):after {
+    background-color: #e7e0ec;
+    top: 30%;
+}
+
+.accordion-body li:nth-child(3):before {
+    border-left: 2px solid #E7E0EC;
+    height: 0;
+}
+
+.accordion-body li:before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0.7rem;
+    width: 10rem;
+    height: 23rem;
+    border-left: 3px solid #6750A4;
+
+}
+
+.accordion-body li:nth-child(2):before {
+    border-left: 3px solid #E7E0EC;
+    height: 25.4rem;
+}
+
+.accordion-body li:nth-child(2):after {
+    left: -1rem
+
+}
+
+.accordion-body li:last-child:before {
+
+    border-left: 3px solid #E7E0EC;
+    height: 0;
+}
+
+.accordion-body li:last-child:after {
+
+    background-color: #E7E0EC;
+    top: 30%;
+}
+
+.accordion-body li:after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: -0.9rem;
+    width: 8rem;
+    height: 3px;
+    background-color: #6750A4;
+
+}
+
+.employment-body-title p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ratings_work span {
+    font-size: 1.6rem;
+    color: #49454F80;
+    font-weight: 500;
+}
+
+.project_content {
+    background: var(--background-ash);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.thumbnail-card {
+    background: url(../../image/profile_milestone_media1.svg) no-repeat;
+    background-size: contain;
+    padding: 0;
+    border-radius: 1rem;
+}
+
+.filter-section p {
+    display: inline-block;
+    background: var(--newChibs_color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--title);
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.4rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.download-button {
+    border: none;
+    color: var(--white);
+    padding: 1.6rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background: var(--btn-primary);
+    border-radius: 4px;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+
+.button-and-text {
+    margin-left: 32%;
+    margin-top: 2%;
+    padding-bottom: 7%;
+}
+
+.filter-toggle.current-filter {
+    background: var(--newfmw_primary);
+    padding: 0.7rem 1.6rem;
+    color: var(--white);
+    transition-duration: .5s;
+    transition-delay: .1s;
+}
+
+
+/*finance css*/
+.profile-finance-section h3 {
+    color: var(--fmw_primary);
+}
+
+.finance-categories, .payment-billing-categories {
+    padding: 3rem 2rem;
+    margin: 1rem 0;
+    background: var(--white);
+}
+
+.category-item {
+    background: var(--background-ash);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+

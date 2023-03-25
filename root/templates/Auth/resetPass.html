@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reset Password</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/css/signup.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-7" style="background: var(--white); border-radius: 1rem;">
+            <div class="form-step form-step-active">
+                <p class="signup_text mb-4 mt-5">Forget Password</p>
+                <p class="signup_welcome mb-5">Reset Your Password: Securely Access Your Account Again !</p>
+                <p class="signup_welcome mb-5">Enter Your Email: Receive a Verification Code to Reset Your Password</p>
+                <form action="#" class="form">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <a href="#">
+                        <button class="btn signup-next-btn mt-5 mb-5" type="button">Next</button>
+                    </a>
+                </form>
+            </div>
+            {#step#}
+
+            <div class="form-step">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-7" style="background: var(--white); border-radius: 1rem;">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-2 mt-5">
+                                <img src="{% static '/image/checkmail.svg' %}">
+                            </div>
+                        </div>
+                        <p class="signup_text mb-3 mt-5">Check your email</p>
+                        <p class="signup_welcome mb-5 mt-5">We have sent a password recover instructions to your email.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-6 text-center">
+                            <p class="spam_filter mb-5">Didn’t receive your the mail? Check your spam filter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {#Step-end#}
+
+        </div>
+    </div>
+</div>
+{% include 'landing_content/landing_footer.html' %}
+<script src="{% static 'js/signup.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+:root {
+    --fmw_primary: #3F9685;
+    --white: #ffffff;
+    --black: #000000;
+    --background-ash: #FAFAFA;
+    --light-green: rgba(68, 160, 141, 0.15);
+    --navbar-border: #BEBEBE;
+    --card_body: linear-gradient(119.78deg, #44A08D 0%, #093637 157.72%);
+    --text_color: rgba(255, 255, 255, 0.75);
+    --muted-text: #707070;
+    --btn-primary: linear-gradient(225deg, #44A08D 0%, #093637 100%);
+
+    --newfmw_primary: #44A08D;
+    --newChibs_color: #E4EBE4;
+    --gradient1: linear-gradient(90.56deg, #44A08D 0.49%, #093637 99.52%);
+    --gradient2: linear-gradient(225deg, #44A08D 0%, #093637 100%);
+    --gradient3: linear-gradient(139.83deg, #44A08D 10.29%, #093637 93.15%);
+    --positive: #1995B2;
+    --negetive: #9B211B;
+    --warning: #FBBC04;
+    --title: #272727;
+    --title-ash:#27272780;
+    --paragraph: #49454F;
+    --black-ash: #393939;
+    --highlighted-text: #44A08D;
+    --border: rgba(190, 190, 190, 0.5);
+    --resume-bg-dark:#263238;
+    --footer-color: linear-gradient(83.57deg, #093637 -19.88%, #44A08D 137.32%);
+
+    --template-color1:#3E3F42;
+}

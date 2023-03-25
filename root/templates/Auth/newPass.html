@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Password</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/login.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-5" style="background: var(--white); border-radius: 1rem;">
+            <p class="login_text mb-3 mt-5">Create a Strong New Password: Secure Your Account Today</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col-11">
+                    <p class="login_welcome mb-5">Protect your online information by creating a secure and unique
+                        password. Our
+                        system ensures that your new password meets industry standards for strength and security.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password </label>
+                </div>
+                <div class="form-floating mb-3 mt-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirm password </label>
+                </div>
+                <button class="btn login-btn mt-5 mb-5" type="button">Reset Password</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% include 'landing_content/landing_footer.html' %}
+</body>
+</html>

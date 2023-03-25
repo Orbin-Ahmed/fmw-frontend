@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log in</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/login.css' %}">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-5" style="background: var(--white); border-radius: 1rem;">
+            <p class="login_text mb-3 mt-5">Log in</p>
+            <p class="login_welcome mb-5">"Welcome back to Find My Work! Login to access your personalized job search
+                dashboard.
+                Find your dream job with ease, start now!"</p>
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3" style="margin-top: 2rem;">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password </label>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember" class="save_pass mt-1"> Remember me </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <a style="all: unset;cursor: pointer" href="/reset-pass/"><p class="forgot-password mt-1">Forgot password?</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn login-btn mt-5" type="button">Log in</button>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <img src="{% static '/image/log in.svg' %}" class="login_image mt-4">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 pt-3">
+                        <p><img src="{% static '/image/icons/google_login.svg' %}" class="login_images"> <img
+                                src="{% static '/image/icons/linkdn_login.svg' %}" class="login_images"> <img
+                                src="{% static '/image/icons/apple_login.svg' %}" class="login_images"> <img
+                                src="{% static '/image/icons/micro_login.svg' %}" class="login_images"></p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 pt-5 pb-5">
+                       <a style="all : unset; cursor: pointer" href="/registration/" ><p class="another_account">Don’t have an account ? <span
+                               class="login_signup_color">Signup</span> Here</p></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% include 'landing_content/landing_footer.html' %}
+</body>
+</html>

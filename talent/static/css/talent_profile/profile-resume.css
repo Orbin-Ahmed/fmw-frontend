@@ -1,0 +1,373 @@
+/*Resume css strats*/
+
+
+/*template 1 css*/
+
+.first-page-resume {
+    background: var(--white);
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.first-page-resume h1 {
+    color: var(--title);
+}
+
+.resume-top-section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: var(--white);
+    border-radius: 1rem
+}
+
+.left-side-dark {
+    background: var(--resume-bg-dark);
+    color: var(--white);
+    padding: 2.2rem 2rem 8rem 2rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.left-side-dark p {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.resume-intro-title p {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.left-side-dark h3 {
+    color: var(--white);
+}
+
+.resume-skills p {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.resume-skills li {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.resume-social-media p {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.intro img {
+    width: 70%;
+}
+
+.right-side-light {
+    padding: 2rem;
+}
+
+.right-side-light p {
+    color: var(--title);
+    font-weight: 500;
+}
+
+.right-side-light span {
+    color: var(--title);
+    font-weight: 400;
+}
+
+
+/*template 2 css*/
+
+
+.resume-template2 {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.resume-template2 p {
+    color: var(--title-ash);
+    font-size: 1.2rem;
+}
+
+.resume-template2 h1 {
+    color: var(--title);
+    font-size: 1.2rem;
+
+}
+
+.resume-template2 h3 {
+    color: var(--white);
+    font-size: 1.6rem;
+
+}
+
+.title p {
+    color: var(--white);
+    opacity: .75;
+    font-weight: 300;
+}
+
+.resume-template2 span {
+    color: var(--title);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.resume-intro-value p {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.resume-template2 li {
+    color: var(--title);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.template2-resume-top {
+    background: #3E3F42;
+    position: relative;
+    height: 13rem;
+    padding: 0 3rem;
+}
+
+.template2-resume-top img {
+    position: absolute;
+    width: 35%;
+    top: -20%;
+    height: auto;
+    background: #3e3f42;
+    border-radius: 50%;
+}
+
+.template2_resume-education {
+    border-left: 1px solid var(--border);
+}
+
+
+/*template 3 css*/
+
+.template3-left-side-blue {
+    background: linear-gradient(213.97deg, rgba(1, 53, 103, 0.85) -0.11%, #130433 100.07%);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.template3-left-side-blue p {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.template3-left-side-blue li {
+
+    color: var(--white);
+    opacity: .70;
+    font-weight: 300;
+}
+
+.template3-left-side-blue span {
+    color: var(--white);
+    font-size: 1.2rem;
+    opacity: .70;
+    font-weight: 300;
+}
+
+.template3-resume-intro-title p {
+    color: var(--title-ash);
+    font-weight: 500;
+}
+
+.template3_right-side-light {
+    background: var(--white);
+    color: var(--title);
+    padding: 2rem 2rem 8rem 2rem;
+}
+
+.template3-intro {
+
+}
+
+.template3-intro img {
+    width: 60%;
+}
+
+
+/*template 4 css*/
+
+.template4-resume {
+    background: white;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.left-side-primary-gradient {
+    background: var(--gradient3);
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem 1rem 15rem 1rem;
+}
+
+.right-side-light-temp4 h1 {
+    color: var(--title);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.right-side-light-temp4 span {
+    color: var(--title);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.left-side-primary-gradient p {
+    color: var(--white);
+    font-size: 1.2rem;
+
+}
+
+.title h3 {
+    font-size: 2.4rem;
+}
+
+.title p {
+    color: var(--title);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.left-side-primary-gradient h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.left-side-primary-gradient h1 {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.resume-intro-title {
+    color: var(--white);
+    opacity: .50;
+}
+
+.resume-skills h1 {
+    color: var(--white);
+    opacity: .50;
+}
+
+.right-side-light-temp4 {
+    padding: 2rem;
+}
+
+.right-side-light-temp4 p {
+    color: var(--title);
+    font-weight: 500;
+}
+
+.right-side-light-temp4 li {
+    color: var(--title);
+    opacity: .70;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+
+/*toggle css*/
+
+.resume-template-preview.resume-template-active {
+    display: block;
+}
+
+.resume-template-preview.resume-template-hidden {
+    display: none;
+}
+
+.color-picker {
+    padding: 2rem;
+    background: var(--white);
+}
+
+.resume_template_showcase {
+    padding: 2rem;
+    background: var(--white);
+    margin: 1rem 0;
+}
+
+/*resume slider css*/
+
+.resume_template_slider_mother_div{
+    padding: 5rem;
+    background: #E4EBE4;
+}
+
+.pagination {
+    --bs-pagination-color: #3f5068;
+    --bs-pagination-border-color: none;
+    --bs-pagination-padding-x: 1.5rem;
+}
+.resume-slider-pagination li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.page-link{
+    transition: none;
+}
+
+.page-link:hover {
+    color: #093637;
+    background-color: var(--bs-pagination-hover-bg);
+    border-color: var(--bs-pagination-hover-border-color);
+    border-radius: 5rem;
+}
+
+.page-link:focus {
+    color: #212529;
+    background-color: var(--bs-pagination-focus-bg);
+    box-shadow: none;
+    border-radius: 5rem;
+}
+.page-link:active {
+    color: #212529;
+    background-color: var(--bs-pagination-focus-bg);
+    box-shadow: none;
+    border-radius: 5rem;
+}
+.style-gone:hover{
+    color: #093637;
+    background-color: transparent;
+    border-color: transparent;
+}
+.style-gone:focus{
+    color: #093637;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*.page-link:hover {*/
+/*    color: var(--title);*/
+/*    background-color: var(--bs-pagination-focus-bg);*/
+/*    box-shadow: none;*/
+/*    border-radius: 50%;*/
+/*    width: 3rem;*/
+/*    height: 3rem*/
+/*}*/
+
+/*.page-link:focus {*/
+/*    color: var(--title);*/
+/*    background-color: var(--bs-pagination-focus-bg);*/
+/*    box-shadow: none;*/
+/*    border-radius: 50%;*/
+/*    width: 3rem;*/
+/*    height: 3rem*/
+/*}*/

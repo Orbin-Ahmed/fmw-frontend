@@ -1,0 +1,242 @@
+{% load static %}
+
+<!--Top Section-->
+
+
+                <div class="top-section">
+                    <div class="d-flex justify-content-between">
+                        <p><span id="completion_percent">80%</span>Completed</p>
+                        <img class="img-fluid" src="{% static '/image/Vector.svg' %}">
+                    </div>
+                    <div class="profile-image-circle pt-5 text-center">
+                        <img width="180" class="img-fluid" src="{% static '/image/imageBox.svg' %}">
+                        <img src="">
+                    </div>
+                    <button class="status-button" id="status_toggle">Online</button>
+                    <div class="Badges d-flex justify-content-between">
+                        <img class="img-fluid" src="{% static '/image/icons/badge1.svg' %}">
+                        <img class="img-fluid" src="{% static '/image/icons/badge2.svg' %}">
+                        <div>
+                            <img class="img-fluid" src="{% static '/image/icons/badge3.svg' %}">
+                            <img class="img-fluid" src="{% static '/image/icons/badge4.svg' %}">
+                            <img class="img-fluid" src="{% static '/image/icons/badge5.svg' %}">
+                        </div>
+                        <img class="img-fluid" src="{% static '/image/icons/badge6.svg' %}">
+                    </div>
+                    <div class="ratings d-flex justify-content-center">
+                        <img src="{% static '/image/icons/star.svg' %}">
+                        <img src="{% static '/image/icons/star.svg' %}">
+                        <img src="{% static '/image/icons/star.svg' %}">
+                        <img src="{% static '/image/icons/star.svg' %}">
+                        <img src="{% static '/image/icons/star.svg' %}">
+                        <p>(<span>27</span>)</p>
+                    </div>
+                </div>
+                <div>
+                    <!--Progress Circle svg-->
+                    {#                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">#}
+                    {#                        <defs>#}
+                    {#                            <linearGradient id="GradientColor">#}
+                    {#                                <stop offset="0%" stop-color="#e91e63"/>#}
+                    {#                                <stop offset="100%" stop-color="#673ab7"/>#}
+                    {#                            </linearGradient>#}
+                    {#                        </defs>#}
+                    {#                        <circle cx="80" cy="80" r="70" stroke-linecap="round"/>#}
+                    {#                    </svg>#}
+                </div>
+
+
+                <!--Overview Section-->
+
+                <div class="overview-section">
+
+                    <!--Earnings-->
+                    <div class="earning-section">
+                        <div class="d-flex pb-4 justify-content-between align-items-center">
+                            <div class="d-flex gap-3">
+                                <img src="{% static '/image/icons/overview_icon.svg' %}">
+                                <h1>Overview</h1>
+                            </div>
+                            <img class="img-fluid" src="{% static '/image/Vector.svg' %}">
+                        </div>
+
+                        <div class="row text-start">
+                            <div class="col">
+                                <p>$<span id="amount">10</span>k<span id="plus_icon">+</span></p>
+                                <h6>total Earnings</h6>
+                            </div>
+                            <div class="col">
+                                <p id="amount">6</p>
+                                <h6>Total Jobs</h6>
+                            </div>
+                            <div class="col">
+                                <p id="amount">184</p>
+                                <h6>total Hours</h6>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row text-start">
+                            <div class="col">
+                                <p>$<span id="amount">100</span>k<span id="plus_icon">+</span></p>
+                                <h6>total Sponsors</h6>
+                            </div>
+                            <div class="col">
+                                <p id="amount">6</p>
+                                <h6>Total Jobs</h6>
+                            </div>
+                            <div class="col">
+                                <p id="amount">184</p>
+                                <h6>total Hours</h6>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--Verifications and language-->
+
+                    <div class="veri-lang-section">
+                        <div class="verification pb-4">
+                            <div class="verification-title d-flex justify-content-between">
+                                <h1>Verifications</h1>
+                                <img src="{% static '/image/icons/verified_badge.svg' %}">
+                            </div>
+                            <p>ID: <span id="verify-status">Verified</span></p>
+                        </div>
+
+                        <div class="language">
+                            <div class="Language-title d-flex justify-content-between">
+                                <h1>Language:</h1>
+                                <img src="{% static '/image/icons/Pencil.svg' %}">
+                            </div>
+                            <p>English: <span id="language-type">Native or Bilingual</span></p>
+                        </div>
+                    </div>
+
+                    <!--About me-->
+
+                    <div class="about-me-section text-start">
+                        <div class="about-content">
+                            <div class="about-title pb-4 d-flex justify-content-between">
+                                <h1>About me:</h1>
+                                <img src="{% static '/image/icons/Pencil.svg' %}">
+                            </div>
+                            <p>
+                                I am a UI/UX designer with [5/7/10+] years of experience creating intuitive digital
+                                experiences. My expertise includes user research, prototyping, wireframing, and
+                                designing stunning interfaces. I have a deep understanding of design trends, techniques,
+                                and tools. I am a fast learner, strong communicator, and dedicated to delivering
+                                outstanding results. Let's create something amazing together!
+                            </p>
+                        </div>
+                    </div>
+
+                </div><!--Overview div ends-->
+
+
+                <!--Contact section-->
+
+                <div class="contact-section">
+
+                    <div class="contact_title">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3">
+                                <img src="{% static '/image/icons/contact_icon.svg' %}">
+                                <h1>Contact</h1>
+                            </div>
+                            <img class="img-fluid" src="{% static '/image/icons/plus_icon.svg' %}">
+                        </div>
+                    </div>
+
+                    <div class="contact-content">
+                        <p>Mail:<span>md.shafiqulislam@incrementsinc.com</span></p>
+                        <p>Phone:<span>+880123456789</span></p>
+                        <div class="social-icons pt-3 d-flex gap-3 justify-content-center">
+                            <img src="{% static '/image/icons/instagram.svg' %}">
+                            <img src="{% static '/image/icons/linkedin.svg' %}">
+                            <img src="{% static '/image/icons/facebook-icon.svg' %}">
+                            <img src="{% static '/image/icons/twitter.svg' %}">
+                        </div>
+                    </div>
+
+
+                </div><!--Contact div ends-->
+
+                <!--Education section-->
+
+                <div class="education-section">
+
+                    <div class="education_title">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="{% static '/image/icons/education_icon.svg' %}">
+                                <h1>Education</h1>
+                            </div>
+                            <img class="img-fluid" src="{% static '/image/icons/plus_icon.svg' %}">
+                        </div>
+                    </div>
+
+                    <div class="education-content text-start">
+
+                        <div class="edu-1">
+                            <div class="st-end-date d-flex justify-content-between">
+                                <span id="edu-start-date">16/08/2013</span>
+                                <span id="edu-end-date">16/08/2015</span>
+                            </div>
+                            <h1>Milestone College</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. School Achivements</p>
+                        </div>
+
+                        <div class="edu-2">
+                            <div class="st-end-date d-flex justify-content-between">
+                                <span id="edu-start-date">16/08/2015</span>
+                                <span id="edu-end-date">16/08/2017</span>
+                            </div>
+                            <h1>Milestone College</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. School Achivements</p>
+                        </div>
+
+                        <div class="edu-3">
+                            <div class="st-end-date d-flex justify-content-between">
+                                <span id="edu-start-date">16/08/2017</span>
+                                <span id="edu-end-date">16/08/2023</span>
+                            </div>
+                            <h1>Shanto-Mariam University Of Creative Technology</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. School Achivements</p>
+                        </div>
+
+
+                    </div>
+
+                </div><!--education div ends-->
+
+
+                <div class="skills-section">
+
+                    <div class="skills_title">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex gap-3">
+                                <img src="{% static '/image/icons/skills_icon.svg' %}">
+                                <h1>Skills</h1>
+                            </div>
+                            <img class="img-fluid" src="{% static '/image/icons/plus_icon.svg' %}">
+                        </div>
+                    </div>
+
+                    <div class="skills-content">
+                        <p id="skill-name">Software Architecture & Design </p>
+                        <p>Firebase Realtime Database </p>
+                        <p>Firebase</p>
+                        <p>Java</p>
+                        <p>Flutter</p>
+                        <p>Android </p>
+                        <p>Amazon Elastic Beanstalk </p>
+                        <p>ERPNext </p>
+                        <p>Firebase Cloud Firestore </p>
+                        <p>Dart </p>
+                        <p>Python </p>
+                    </div>
+
+                </div><!--skills div ends-->

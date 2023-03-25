@@ -1,0 +1,169 @@
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+    width: 52.2rem;
+    margin-left: 28%;
+    border-radius: 3rem;
+}
+
+
+.progress-step {
+    width: 3.2rem;
+    height: 3.2rem;
+    background: var(--background-ash);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.2rem;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background: var(--btn-primary);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    color: #49454F;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+}
+
+.progress-step-active {
+    background: var(--btn-primary);
+    color: #f3f3f3;
+    font-size: 1.6rem;
+    display : inline-grid;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.signup_text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #1A1A40;
+
+}
+
+.signup_welcome {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: rgba(26, 26, 64, 0.7);
+}
+
+.form-floating > .form-control {
+    height: calc(3.5rem + 20px);
+    line-height: 1.25;
+    font-size: 1.2rem;
+}
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: 1;
+    transform: scale(.85) translateY(-1.6rem) translateX(1.15rem);
+    background: var(--background-ash);
+    padding: 0.5rem;
+    height: 2.6rem;
+    color: var(--paragraph);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.form-control {
+    border: 1px solid var(--border);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.form-floating > label {
+    width: auto;
+    font-size: 1.6rem;
+}
+
+.signup-next-btn {
+    background: var(--btn-primary);
+    color: var(--white);
+    padding: 1.2rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0.5rem;
+
+}
+
+.signup-next-btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--white);
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.signup_verify_text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--black);
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+/*resetpass css*/
+
+.spam_filter {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--muted-text);
+}

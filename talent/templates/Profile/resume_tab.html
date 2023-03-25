@@ -1,0 +1,212 @@
+<!-- Resume section starts -->
+
+{% load static %}
+<div class="Resume-section">
+
+    <div class="resume-top-section d-flex justify-content-between">
+        <h2>Add New</h2>
+        <img alt="" src="{% static '/image/icons/plus_icon.svg' %}">
+    </div>
+
+    <div class=" row filter-section">
+        <div class="col-9 m-auto">
+            <a onclick="changeTemplate(1)">
+                <p class="filter-toggle current-filter" id="skill-name1"
+                   onclick="change_filter(this.id);">
+                    Standard </p>
+            </a>
+
+            <p class="filter-toggle" id="skill-name2"
+               onclick="change_filter(this.id); changeTemplate(2)">Professional</p>
+            <p class="filter-toggle" id="skill-name3"
+               onclick="change_filter(this.id) ; changeTemplate(3)">Skill Based</p>
+            <p class="filter-toggle" id="skill-name4"
+               onclick="change_filter(this.id) ;changeTemplate(4)">Experienced</p>
+        </div>
+        <div class="col-3 text-end">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+
+    <div class="resume-content">
+
+        <div class="status d-flex gap-3 pb-3 justify-content-start align-items-center"
+             style="cursor: pointer" id="profile_status_toggle_div_2">
+            <img alt="" id=""
+                 src="{% static '/image/icons/profile_status_icon.svg' %}">
+            <p id="status_toggle_trigger2">Private</p>
+        </div>
+
+        <div class="Resume-templates">
+
+            {% include 'Profile/Resume_preview/template1/template1.html' %}
+            {% include 'Profile/Resume_preview/template2/template2.html' %}
+            {% include 'Profile/Resume_preview/template3/template3.html' %}
+            {% include 'Profile/Resume_preview/template4/template4.html' %}
+
+        </div>
+
+
+        <!--Color swatches-->
+
+        <div class="color-picker">
+            <div class="color-picker-title mb-4 d-flex align-items-center gapp-2">
+                <img src="{% static '/image/icons/color-pallet.svg' %}" alt="">
+                <h3 style="margin: auto 0;">Color Picker</h3>
+            </div>
+
+            <div class="color-picker-swathes">
+                <a onclick="changeColor(1 ,'.left-side-dark')" id="color-template-1">
+                    <img src="{% static '/image/icons/color_swatch1.svg' %}" alt="">
+                </a>
+
+                <a onclick="changeColor(2,'.left-side-dark')" id="color-template-2">
+                    <img src="{% static '/image/icons/color_swatch2.svg' %}" alt="">
+                </a>
+
+                <a onclick="changeColor(3,'.left-side-dark')" id="color-template-3">
+                    <img src="{% static '/image/icons/color_swatch3.svg' %}" alt="">
+                </a>
+
+                <a onclick="changeColor(4,'.left-side-dark')" id="color-template-4">
+                    <img src="{% static '/image/icons/color_swatch4.svg' %}" alt="">
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  Resume template showcase  -->
+
+    <div class="resume_template_showcase">
+
+        <div class="d-flex align-items-center gapp-2 mb-4">
+            <img src="{% static '/image/icons/color-pallet.svg' %}" alt="">
+            <h3 style="margin: auto 0;">Templates</h3>
+        </div>
+        <div class="resume_template_showcase_carousal">
+
+            <!--carousal-->
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!--item 1-->
+                        <div class="resume_template_slider_mother_div d-flex justify-content-center gapp-2">
+
+                            <a style="cursor: pointer" onclick="changeTemplate(2)">
+                                <img alt="" src="{% static '/image/resume_slider_template1.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(3)">
+
+                                <img alt="" src="{% static '/image/resume_slider_template3.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(4)">
+                                <img alt="" src="{% static '/image/resume_slider_template2.svg' %}">
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="resume_template_slider_mother_div d-flex justify-content-center gapp-2">
+
+                            <a style="cursor: pointer" onclick="changeTemplate(2)">
+                                <img alt="" src="{% static '/image/resume_slider_template1.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(3)">
+
+                                <img alt="" src="{% static '/image/resume_slider_template3.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(4)">
+                                <img alt="" src="{% static '/image/resume_slider_template2.svg' %}">
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="resume_template_slider_mother_div d-flex justify-content-center gapp-2">
+
+                            <a style="cursor: pointer" onclick="changeTemplate(2)">
+                                <img alt="" src="{% static '/image/resume_slider_template1.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(3)">
+
+                                <img alt="" src="{% static '/image/resume_slider_template3.svg' %}">
+                            </a>
+
+                            <a style="cursor: pointer" onclick="changeTemplate(4)">
+                                <img alt="" src="{% static '/image/resume_slider_template2.svg' %}">
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!--pagination-->
+
+
+            <div class="resume-slider-pagination d-flex justify-content-center mt-4">
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex align-items-center">
+                        <li class="page-item">
+                            <a class="page-link style-gone" href="#" aria-label="Previous"
+                               data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a data-bs-target="#carouselExample" data-bs-slide-to="0"
+                                                 class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                                 class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                                 class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link style-gone" href="#" aria-label="Next" data-bs-target="#carouselExample"
+                               data-bs-slide="next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+            <!--carousal-->
+
+        </div>
+
+    </div>
+
+
+</div><!-- Resume main div ends-->

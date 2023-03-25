@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+    {% load static %}
+    {% include 'stylesheet.html' %}
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/css/signup.css' %}">
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+<div class="container mt-5 mb-5">
+    <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active" data-title="Basic info."></div>
+        <div class="progress-step" data-title="Finalize"></div>
+
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-7" style="background: var(--white); border-radius: 1rem;">
+            <div class="form-step form-step-active">
+                <p class="signup_text mb-3 mt-5">Sign Up</p>
+                <p class="signup_welcome mb-5">Welcome to Find My Work! Connect with top employers and find your dream
+                    job
+                    with ease. Browse job listings and start your successful career journey now</p>
+                <form action="#" class="form">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div style="display: flex;  justify-content: space-between">
+                        <div class="form-floating mb-3 mt-2" style="width:32%;">
+                            <input type="text" class="form-control" id="floatingInput"
+                                   placeholder="Enter your name">
+                            <label for="floatingInput">First Name</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-2" style="width:32%;">
+                            <input type="text" class="form-control" id="floatingInput"
+                                   placeholder="Enter your name">
+                            <label for="floatingInput">Middle Name</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-2" style="width:32%;">
+                            <input type="text" class="form-control" id="floatingInput"
+                                   placeholder="Enter your name">
+                            <label for="floatingInput">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password </label>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Re-type password</label>
+                    </div>
+                    <a href="#">
+                        <button class="btn signup-next-btn mt-5 mb-5" type="button">Next</button>
+                    </a>
+                </form>
+            </div>
+            {#step#}
+
+            <div class="form-step">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-7" style="background: var(--white); border-radius: 1rem;">
+                        <p class="signup_verify_text mb-5 mt-5">Verify Your Account Now: Ensure a Secure and
+                            Smooth
+                            Experience</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-7 ">
+                            <img src="{% static '/image/signup_confirmguy.svg' %}">
+                        </div>
+                        <button class="btn signup-next-btn mt-5 mb-5" type="button">Go to your Mail</button>
+                    </div>
+                </div>
+            </div>
+
+            {#Step-end#}
+
+        </div>
+    </div>
+</div>
+{% include 'landing_content/landing_footer.html' %}
+<script src="{% static 'js/signup.js' %}"></script>
+</body>
+</html>

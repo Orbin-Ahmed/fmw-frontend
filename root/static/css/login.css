@@ -1,0 +1,105 @@
+
+.login_text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #1A1A40;
+}
+
+.login_welcome {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: rgba(26, 26, 64, 0.7);
+}
+
+.form-floating > .form-control {
+    height: calc(3.5rem + 20px);
+    line-height: 1.25;
+    font-size: 1.2rem;
+}
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: 1;
+    transform: scale(.85) translateY(-1.6rem) translateX(1.15rem);
+    background: var(--background-ash);
+    padding: 0.5rem;
+    height: 2.6rem;
+    color: var(--paragraph);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.form-control {
+    border: 1px solid var(--border);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.form-floating > label {
+    width: auto;
+    font-size: 1.6rem;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.login-btn {
+    background: var(--btn-primary);
+    color: var(--white);
+    padding: 1.2rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.login-btn:hover {
+    background-color: var(--white);
+}
+
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+
+.save_pass {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #49454F;
+}
+
+.btn:hover {
+    color: var(--white);
+}
+
+.login_image {
+    text-align: center;
+}
+
+.login_images {
+    padding-right: 7%
+}
+
+.another_account {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #49454F
+}
+
+.login_signup_color {
+    color: #0A66C2;
+}

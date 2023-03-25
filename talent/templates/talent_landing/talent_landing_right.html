@@ -1,0 +1,63 @@
+{% load static %}
+<div class="input-group">
+    <button class="btn search-btn" type="button" id="nav_search_btn" style="border-right: 0"><i
+            class="bi bi-search"></i></button>
+    <input style="width: 70rem" type="text" class="form-control search-form" placeholder="Search">
+    <select class="form-select search-dropdown">
+        <option selected>Jobs</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+    </select>
+</div>
+<div class="row d-flex justify-content-between filter-card mt-5" style="margin-left: 0;padding: 0;">
+    <div class="col-6">
+        <p class="filter-title" style="font-weight: 500">Jobs you might interested in</p>
+    </div>
+    <div class="col-6 m-auto">
+        <img class="float-end" src="{% static 'image/icons/threeDots.svg' %}" alt="dots">
+    </div>
+
+    {#Tab start#}
+    <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button"
+                    role="tab" aria-controls="feed" aria-selected="true">My Feed
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="best-tab" data-bs-toggle="tab" data-bs-target="#best" type="button"
+                    role="tab" aria-controls="best" aria-selected="false">Best Matches
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recent" type="button"
+                    role="tab" aria-controls="recent" aria-selected="false">Most Recent
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="saved-tab" data-bs-toggle="tab" data-bs-target="#saved" type="button"
+                    role="tab" aria-controls="saved" aria-selected="false">Saved Jobs
+            </button>
+        </li>
+    </ul>
+    {#    filter-area#}
+    <div class="filter-content mt-3 mb-3">
+        <p id="filter-all" class="current-filter" onclick="change_filter(this.id);">All</p>
+        <p id="filter-1" onclick="change_filter(this.id);">ux design</p>
+        <p id="filter-2" onclick="change_filter(this.id);">flutter developer</p>
+        <p id="filter-3" onclick="change_filter(this.id);">mobile developer</p>
+        <p id="filter-4" onclick="change_filter(this.id);">mobile app design</p>
+    </div>
+    {#    filter-area end#}
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="feed" role="tabpanel"
+             aria-labelledby="home-tab">{% include 'talent_landing/landing_tab/my_feed.html' %}</div>
+        <div class="tab-pane fade" id="best" role="tabpanel"
+             aria-labelledby="profile-tab">{% include 'talent_landing/landing_tab/best_match.html' %}</div>
+        <div class="tab-pane fade" id="recent" role="tabpanel"
+             aria-labelledby="contact-tab">{% include 'talent_landing/landing_tab/most_recent.html' %}</div>
+        <div class="tab-pane fade" id="saved" role="tabpanel"
+             aria-labelledby="contact-tab">{% include 'talent_landing/landing_tab/saved_jobs.html' %}</div>
+    </div>
+    {#Tab end#}
+</div>
